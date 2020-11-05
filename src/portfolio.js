@@ -9,10 +9,8 @@ const greeting = {
   username: "Anh Nguyen",
   title: "Hi, I'm Anh (Jessie) Nguyen",
   subTitle: emoji(
-    "A junior majoring in Computer Science at the University of Rochester 👩‍💻. Passionate in Open Source, Software Development and community activities 🤩."
+    "A junior studying Computer Science at the University of Rochester 👩‍💻. Passionate in Open Source, Software Development and community activities 🤩."
   ),
-  // resumeLink:
-  //   "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
 };
 
 // Your Social Media Link
@@ -28,7 +26,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "BUILD THINGS THAT I LIKE OR HAVE AN IMPACT ON PEOPLE AROUND ME",
+  subTitle:
+    "LEARN EVERY DAY AND STRIVE TO BUILD THINGS THAT HAVE AN IMPACT ON PEOPLE AROUND ME",
   skills: [
     emoji("⚡ Develop back-end and front-end for web applications"),
     emoji("⚡ Build open source tools and contribute to OSS community"),
@@ -261,9 +260,7 @@ const talkSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "If you want to discuss anything, contact me in one of these social media below",
-  // number: "+92-3243454077",
-  // email_address: "saadpasta70@gmail.com",
+    "If you want to discuss anything, contact me at one of these social media below",
 };
 
 //Twitter Section
@@ -282,7 +279,6 @@ export {
   leadershipSection,
   blogSection,
   talkSection,
-  //podcastSection,
   contactInfo,
   twitterDetails,
 };
