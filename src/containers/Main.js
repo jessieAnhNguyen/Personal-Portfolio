@@ -52,7 +52,6 @@ export default class Main extends Component {
           <Talks />
           <Twitter />
           <Profile />
-          {/* <Footer /> */}
           <Top />
         </StyleProvider>
       </div>
