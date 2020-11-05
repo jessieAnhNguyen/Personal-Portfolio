@@ -14,7 +14,7 @@ export default function Skills() {
           <div className="skills-image-div">
             <img
               alt="Personal Photo"
-              src={require("../../assets/images/myPhoto2.jpg")}
+              src={require("../../assets/images/workPhoto.jpg")}
             ></img>
           </div>
         </Fade>

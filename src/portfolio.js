@@ -168,10 +168,10 @@ const leadershipSection = {
   title: emoji("Leadership Experience 🚀 "),
   achievementsCards: [
     {
-      title: "Google Developer Student Club Lead",
+      title: "Google Developer Student Club",
       subtitle:
         "Founder and President of University of Rochester's DSC chapter.",
-      image: require("./assets/images/DSCPhoto.jpg"),
+      image: require("./assets/images/DSCPhoto2.jpg"),
       footerLink: [
         {
           name: "About DSC",
@@ -186,7 +186,7 @@ const leadershipSection = {
     {
       title: "Computer Science Undergraduate Council",
       subtitle:
-        "Vice President at University of Rochester's largest computer science organization",
+        "Vice President of University of Rochester's largest computer science organization",
       image: require("./assets/images/CSUGLogo.png"),
       footerLink: [
         {
@@ -197,7 +197,7 @@ const leadershipSection = {
     },
 
     {
-      title: "DandyHacks Organizer",
+      title: "DandyHacks",
       subtitle:
         "Organized DandyHacks - University of Rochester's biggest hackathon",
       image: require("./assets/images/DHPhoto.jpg"),
