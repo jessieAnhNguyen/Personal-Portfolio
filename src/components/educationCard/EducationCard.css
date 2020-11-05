@@ -33,7 +33,7 @@
   font-size: 28px;
   font-weight: 700;
   text-overflow: ellipsis;
-  overflow: hidden;
+  /* overflow: hidden; */
   white-space: nowrap;
 }
 
@@ -94,13 +94,14 @@
   }
   .education-text-school {
     font-size: 20px;
+    margin-bottom: 10px;
   }
   .education-text-duration {
     font-size: 16px;
   }
   .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }

@@ -45,10 +45,23 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.greeting-image-div > * {
+  flex: 1;
+  margin: auto;
 }
+
+.greeting-image-div > img {
+  /* max-width: 90%;
+  height: auto; */
+  object-fit: cover;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;

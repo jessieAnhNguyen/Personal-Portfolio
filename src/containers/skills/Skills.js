@@ -13,8 +13,8 @@ export default function Skills() {
         <Fade left duration={1000}>
           <div className="skills-image-div">
             <img
-              alt="Saad Working"
-              src={require("../../assets/images/developerActivity.svg")}
+              alt="Personal Photo"
+              src={require("../../assets/images/myPhoto2.jpg")}
             ></img>
           </div>
         </Fade>

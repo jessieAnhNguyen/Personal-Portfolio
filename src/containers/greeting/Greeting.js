@@ -1,7 +1,7 @@
 ﻿import React, { useContext } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
+// import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
@@ -32,20 +32,20 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <SocialMedia />
-              <div className="button-greeting-div">
+              {/* <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 <Button
                   text="See my resume"
                   newTab={true}
                   href={greeting.resumeLink}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="greeting-image-div">
             <img
-              alt="saad sitting on table"
-              src={require("../../assets/images/manOnTable.svg")}
+              alt="Personal photo"
+              src={require("../../assets/images/greetingPhoto.jpg")}
             ></img>
           </div>
         </div>

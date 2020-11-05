@@ -13,11 +13,8 @@ export default function TalkCard({ talkDetails }) {
           <p className="talk-card-subtitle">{talkDetails.subtitle}</p>
 
           <div className="card-footer-button-div">
-            <a href={talkDetails.slides_url} target="_" class="talk-button">
-              Slides
-            </a>
-            <a href={talkDetails.event_url} target="_" class="talk-button">
-              Event
+            <a href={talkDetails.url} target="_" class="talk-button">
+              Recording
             </a>
           </div>
         </div>

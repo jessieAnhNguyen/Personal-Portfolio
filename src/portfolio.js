@@ -1,5 +1,4 @@
-﻿
-/* Change this file to get your personal Portfolio */
+﻿/* Change this file to get your personal Portfolio */
 
 // Your Summary And Greeting Section
 
@@ -7,94 +6,76 @@ import emoji from "react-easy-emoji";
 
 const greeting = {
   /* Your Summary And Greeting Section */
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."),
-  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+  username: "Anh Nguyen",
+  title: "Hi, I'm Anh (Jessie) Nguyen",
+  subTitle: emoji(
+    "A junior majoring in Computer Science at the University of Rochester 👩‍💻. Passionate in Open Source, Software Development and community activities 🤩."
+  ),
+  // resumeLink:
+  //   "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
 };
 
 // Your Social Media Link
 
 const socialMediaLinks = {
-
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta"
+  github: "https://github.com/jessieAnhNguyen",
+  linkedin: "https://www.linkedin.com/in/jessieanh/",
+  twitter: "https://twitter.com/jessie_anh_ng",
   // Instagram and Twitter are also supported in the links!
 };
 
 // Your Skills Section
 
 const skillsSection = {
-  title: "What i do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I do",
+  subTitle: "BUILD THINGS THAT I LIKE OR HAVE AN IMPACT ON PEOPLE AROUND ME",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji("⚡ Develop back-end and front-end for web applications"),
+    emoji("⚡ Build open source tools and contribute to OSS community"),
+    emoji("⚡ Lead organizations/ activities for tech community on campus"),
   ],
 
-/* Make Sure You include correct Font Awesome Classname to view your icon
+  /* Make Sure You include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java",
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-js",
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-react",
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "fab fa-node",
     },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "fab fa-npm",
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-database",
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5",
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt",
     },
     {
       skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
     },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ]
+  ],
 };
 
 // Your education background
@@ -103,28 +84,19 @@ const educationInfo = {
   viewEducation: true, // Set it to true to see education section
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      schoolName: "University of Rochester",
+      logo: require("./assets/images/URLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      duration: "August 2018 - May 2022",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      ]
-    }
-  ]
-}
+        "Some courses: Databases Systems, Web Development, Computer Organization, Artificial Intelligence, Data Structures and Algorithms",
+        "Workshop Leader (TA) for Intro to Computer Science",
+        "CETL Peer Tutor for Computer Science courses",
+      ],
+    },
+  ],
+};
 
 // Your top 3 proficient stacks/tech experience
 
@@ -132,20 +104,21 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "90%"  //Insert relative proficiency in percentage
+      Stack: "Object-Oriented Programming", //Insert stack or technology you have experience in
+      progressPercentage: "85%", //Insert relative proficiency in percentage
     },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ]
-};
 
+    {
+      Stack: "Back-end and Databases",
+      progressPercentage: "75%",
+    },
+
+    {
+      Stack: "Front-end and Design",
+      progressPercentage: "60%",
+    },
+  ],
+};
 
 // Your top 3 work experiences
 
@@ -153,31 +126,32 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Open Source Contributor",
+      company: "Major League Hacking (MLH) Fellowship",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "June 2020 - August 2020",
+      desc:
+        "Contributed to Facebook’s React Native and Hermes (an engine optimized for running React Native apps on Android).",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Developed a transformer tool to convert Hermes JavaScript runtime sampling profile to Chrome DevTools format using TypeScript, enabling thousands of OSS community users to profile React Native Android applications",
+        "Implemented a new command on React Native CLI (command line interface) to automate the process of profiling",
+        "Documented how the Hermes sampling profiler works and its usage on React Native’s website",
+      ],
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      company: "FPT.AI",
+      companylogo: require("./assets/images/fptLogo.png"),
+      date: "June 2019 – August 2019",
+      desc:
+        "Member of Big Data team doing ‘Credit Scoring’ project for consumer finance company Home Credit",
+      descBullets: [
+        "Built a Machine Learning model with accuracy 94% to predict the creditworthiness of borrowers using Python",
+        "Deployed a RESTful API from the above machine learning model using Flask",
+        "Built an Influence-Scoring model that calculates the popularity and impact of social media (posts, comments, replies) by applying Google PageRank algorithm",
+      ],
     },
-  ]
+  ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -185,124 +159,130 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "saadpasta", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile :"true" // Set true or false to show Contact profile using Github, defaults to false
-};
-
-
-// Some Big Projects You have worked with your company
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      link: "http://saayahealth.com/"
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      link: "http://nextu.se/"
-    }
-  ]
+  githubUserName: "jessieAnhNguyen", // Change to your github username to view your profile in Contact Section.
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to false
 };
 
 // Your Achievement Section Include Your Certification Talks and More
 
-const achievementSection = {
-
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+const leadershipSection = {
+  title: emoji("Leadership Experience 🚀 "),
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      title: "Google Developer Student Club Lead",
+      subtitle:
+        "Founder and President of University of Rochester's DSC chapter.",
+      image: require("./assets/images/DSCPhoto.jpg"),
       footerLink: [
-        { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
-        { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
-        { name: "Google Code-in Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
-      ]
+        {
+          name: "About DSC",
+          url: "https://developers.google.com/community/dsc",
+        },
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/dsc.uofr/",
+        },
+      ],
     },
     {
-      title: "Google Assistant Action",
-      subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
+      title: "Computer Science Undergraduate Council",
+      subtitle:
+        "Vice President at University of Rochester's largest computer science organization",
+      image: require("./assets/images/CSUGLogo.png"),
+      footerLink: [
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/ur.csug/",
+        },
+      ],
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "DandyHacks Organizer",
+      subtitle:
+        "Organized DandyHacks - University of Rochester's biggest hackathon",
+      image: require("./assets/images/DHPhoto.jpg"),
       footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
-      ]
-    }
-  ]
+        {
+          name: "DandyHacks Website",
+          url: "https://dandyhacks.net/",
+        },
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/dandyhacks/",
+        },
+      ],
+    },
+  ],
 };
 
 // Blogs Section
 
 const blogSection = {
-
   title: "Blogs",
-  subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  subtitle:
+    "I love to write about my experiences and projects that I am proud of.",
 
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description: "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      url:
+        "https://www.g2i.co/blog/profiling-react-native-apps-runtime-performance-using-hermes",
+      title: "Profiling React Native App's Runtime Performance Using Hermes",
+      description:
+        "An npm tool I developed that makes profiling React Native App easily using Hermes",
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description: "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ]
+      url:
+        "https://dev.to/jessie_anh_nguyen/growing-as-a-developer-through-the-mlh-fellowship-eb2",
+      title: "Growing as a developer through the MLH Fellowship",
+      description:
+        "My experience being in the inaugural class of MLH Fellows in Summer 2020",
+    },
+  ],
 };
 
 // Talks Sections
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+  subtitle: emoji(
+    "I LOVE TO SHARE MY KNOWLEDGE AND TALK ABOUT WHAT I'VE BUILT!"
+  ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ]
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: ["https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"]
+      title: "Making React Native Fast With Hermes",
+      subtitle: "A discussion about Hermes at React Wednesdays",
+      url: "https://www.youtube.com/watch?v=JDct3Hsh4m8&ab_channel=KendoUI",
+    },
+  ],
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  subtitle:
+    "If you want to discuss anything, contact me in one of these social media below",
+  // number: "+92-3243454077",
+  // email_address: "saadpasta70@gmail.com",
 };
 
 //Twitter Section
 
 const twitterDetails = {
-
-  userName : "twitter"//Replace "twitter" with your twitter username without @
-
+  userName: "jessie_anh_ng", //Replace "twitter" with your twitter username without @
 };
-export { greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};
+export {
+  greeting,
+  socialMediaLinks,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  leadershipSection,
+  blogSection,
+  talkSection,
+  //podcastSection,
+  contactInfo,
+  twitterDetails,
+};
