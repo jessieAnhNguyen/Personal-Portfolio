@@ -26,9 +26,9 @@ export default function StackProgress() {
                     })}
                 </div>
 
-                <div className="skills-image">
+                {/* <div className="skills-image">
                     <img alt="Skills" src={require("../../assets/images/skill.svg")} />
-                </div>
+                </div> */}
 
             </div>
             </Fade>
