@@ -1,4 +1,6 @@
-# Software Developer Folio ⚡️
+# Software Developer Portfolio ⚡️
+
+My personal website that showcases information about my skills, experiences, and blogs. The portfolio is based on the [template](https://github.com/saadpasta/developerFolio) made by [Saad Pasta](https://github.com/saadpasta)
 
 ## Sections
 
@@ -11,7 +13,7 @@
 ✔️ Blogs\
 ✔️ Talks\
 ✔️ Twitter Timeline\
-✔️ Contact me\
+✔️ Contact me
 
 ## Technologies Used
 
@@ -22,5 +24,3 @@
 - [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 - [react-headroom](https://github.com/KyleAMathews/react-headroom)
 - [color-thief](https://github.com/lokesh/color-thief)
-
-Based on the developer [template](https://github.com/saadpasta/developerFolio) made by [Saad Pasta](https://github.com/saadpasta)
