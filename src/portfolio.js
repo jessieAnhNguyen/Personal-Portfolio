@@ -27,7 +27,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "LEARN EVERY DAY AND STRIVE TO BUILD THINGS THAT HAVE AN IMPACT ON PEOPLE AROUND ME",
+    "DEVELOP SOFTWARE, COLLABORATE WITH OTHERS AND LEARN NEW THINGS EVERY DAY",
   skills: [
     emoji("⚡ Develop back-end and front-end for web applications"),
     emoji("⚡ Build open source tools and contribute to OSS community"),
@@ -63,12 +63,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database",
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5",
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt",
+      skillName: "Android",
+      fontAwesomeClassname: "fab fa-android",
     },
     {
       skillName: "python",
@@ -89,9 +85,9 @@ const educationInfo = {
       duration: "August 2018 - May 2022",
       desc: "",
       descBullets: [
-        "Some courses: Databases Systems, Web Development, Computer Organization, Artificial Intelligence, Data Structures and Algorithms",
-        "Workshop Leader (TA) for Intro to Computer Science",
-        "CETL Peer Tutor for Computer Science courses",
+        "Some courses: Databases Systems, Web Development, Android App Development, Human-Computer Interaction, Artificial Intelligence, Data Structures and Algorithms",
+        "Teaching Assistant for Computation and Formal Systems",
+        "Member of Phi Beta Kappa Honor Society",
       ],
     },
   ],
@@ -108,7 +104,12 @@ const techStack = {
     },
 
     {
-      Stack: "Back-end and Databases",
+      Stack: "Databases and APIs",
+      progressPercentage: "75%",
+    },
+
+    {
+      Stack: "Android App Development",
       progressPercentage: "75%",
     },
 
@@ -187,8 +188,12 @@ const leadershipSection = {
       title: "Computer Science Undergraduate Council",
       subtitle:
         "Vice President of University of Rochester's largest computer science organization",
-      image: require("./assets/images/CSUGLogo.png"),
+      image: require("./assets/images/CSUG_group_photo.jpeg"),
       footerLink: [
+        {
+          name: "Website",
+          url: "https://ur-csug.org/#/",
+        },
         {
           name: "Instagram",
           url: "https://www.instagram.com/ur.csug/",
@@ -197,13 +202,13 @@ const leadershipSection = {
     },
 
     {
-      title: "DandyHacks",
+      title: "DandyHacks Hackathon",
       subtitle:
         "Organized DandyHacks - University of Rochester's biggest hackathon",
       image: require("./assets/images/DHPhoto.jpg"),
       footerLink: [
         {
-          name: "DandyHacks Website",
+          name: "Website",
           url: "https://dandyhacks.net/",
         },
         {
