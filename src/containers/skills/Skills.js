@@ -1,21 +1,37 @@
-import React, { useContext } from "react";
-import "./Skills.css";
+import React, {useContext} from "react";
+import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { skillsSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {illustration, skillsSection} from "../../portfolio";
+import {Fade} from "react-reveal";
+import codingPerson from "../../assets/lottie/codingPerson";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
+  if (!skillsSection.display) {
+    return null;
+  }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
+<<<<<<< HEAD
             <img
               alt="Personal Photo"
               src={require("../../assets/images/workPhoto.jpg")}
             ></img>
+=======
+            {illustration.animated ? (
+              <DisplayLottie animationData={codingPerson} />
+            ) : (
+              <img
+                alt="Man Working"
+                src={require("../../assets/images/developerActivity.svg")}
+              ></img>
+            )}
+>>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
           </div>
         </Fade>
         <Fade right duration={1000}>
@@ -36,9 +52,10 @@ export default function Skills() {
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills) => {
+              {skillsSection.skills.map((skills, i) => {
                 return (
                   <p
+                    key={i}
                     className={
                       isDark
                         ? "dark-mode subTitle skills-text"

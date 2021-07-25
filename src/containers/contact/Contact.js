@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
-import "./Contact.css";
+import React, {useContext} from "react";
+import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {illustration, contactInfo} from "../../portfolio";
+import {Fade} from "react-reveal";
+import email from "../../assets/lottie/email";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -22,7 +24,6 @@ export default function Contact() {
             >
               {contactInfo.subtitle}
             </p>
-
             <div
               className={
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
@@ -45,12 +46,14 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            <img
-              alt="Saad Working"
-              src={require(`../../assets/images/${
-                isDark ? "contactMailDark.svg" : "contactMail.webp"
-              }`)}
-            ></img>
+            {illustration.animated ? (
+              <DisplayLottie animationData={email} />
+            ) : (
+              <img
+                alt="Man working"
+                src={require("../../assets/images/contactMailDark.svg")}
+              ></img>
+            )}
           </div>
         </div>
       </div>

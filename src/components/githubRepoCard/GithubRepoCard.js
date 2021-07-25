@@ -1,8 +1,8 @@
 import React from "react";
-import "./GithubRepoCard.css";
-import { Fade } from "react-reveal";
+import "./GithubRepoCard.scss";
+import {Fade} from "react-reveal";
 
-export default function GithubRepoCard({ repo, isDark }) {
+export default function GithubRepoCard({repo, isDark}) {
   function openRepoinNewTab(url) {
     var win = window.open(url, "_blank");
     win.focus();
@@ -19,12 +19,11 @@ export default function GithubRepoCard({ repo, isDark }) {
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
-              className="octicon"
+              className="octicon repo-svg"
               height="20"
               role="img"
               viewBox="0 0 12 16"
               width="14"
-              className="repo-svg"
             >
               <path
                 fill-rule="evenodd"
@@ -40,7 +39,7 @@ export default function GithubRepoCard({ repo, isDark }) {
                 <span>
                   <div
                     className="language-color"
-                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
+                    style={{backgroundColor: repo.node.primaryLanguage.color}}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
@@ -48,13 +47,12 @@ export default function GithubRepoCard({ repo, isDark }) {
               <span>
                 <svg
                   aria-hidden="true"
-                  className="octicon"
+                  className="octicon repo-star-svg"
                   height="20"
                   role="img"
                   viewBox="0 0 10 16"
                   width="12"
                   fill="rgb(106, 115, 125)"
-                  className="repo-star-svg"
                 >
                   <path
                     fill-rule="evenodd"
@@ -66,13 +64,12 @@ export default function GithubRepoCard({ repo, isDark }) {
               <span>
                 <svg
                   aria-hidden="true"
-                  className="octicon"
+                  className="octicon repo-star-svg"
                   height="20"
                   role="img"
                   viewBox="0 0 14 16"
                   width="14"
                   fill="rgb(106, 115, 125)"
-                  className="repo-star-svg"
                 >
                   <path
                     fill-rule="evenodd"

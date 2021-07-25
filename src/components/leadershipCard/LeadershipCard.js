@@ -24,7 +24,10 @@ export default function LeadershipCard({ cardInfo, isDark }) {
         {cardInfo.footer.map((v, i) => {
           return (
             <span
-              class={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
+              key={i}
+              className={
+                isDark ? "dark-mode certificate-tag" : "certificate-tag"
+              }
               onClick={() => openUrlInNewTab(v.url)}
             >
               {v.name}

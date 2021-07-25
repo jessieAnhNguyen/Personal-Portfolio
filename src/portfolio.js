@@ -1,8 +1,14 @@
 ﻿/* Change this file to get your personal Portfolio */
 
-// Your Summary And Greeting Section
+// To change portfolio colors globally go to the  _globalColor.scss file
+
+// Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
+
+const illustration = {
+  animated: true // set to false to use static SVG
+};
 
 const greeting = {
   /* Your Summary And Greeting Section */
@@ -13,16 +19,17 @@ const greeting = {
   ),
 };
 
-// Your Social Media Link
+// Social Media Links
 
 const socialMediaLinks = {
   github: "https://github.com/jessieAnhNguyen",
   linkedin: "https://www.linkedin.com/in/jessieanh/",
   twitter: "https://twitter.com/jessie_anh_ng",
   // Instagram and Twitter are also supported in the links!
+  display: true // Set true to display this section, defaults to false
 };
 
-// Your Skills Section
+// Skills Section
 
 const skillsSection = {
   title: "What I do",
@@ -73,10 +80,10 @@ https://fontawesome.com/icons?d=gallery */
   ],
 };
 
-// Your education background
+// Education Section
 
 const educationInfo = {
-  viewEducation: true, // Set it to true to see education section
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "University of Rochester",
@@ -123,7 +130,7 @@ const techStack = {
 // Your top 3 work experiences
 
 const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Open Source Contributor",
@@ -163,7 +170,40 @@ const openSource = {
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to false
 };
 
-// Your Achievement Section Include Your Certification Talks and More
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Big Projects",
+  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Saayahealth",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+}
+// Achievement Section
+// Include certificates, talks etc
 
 const leadershipSection = {
   title: emoji("Leadership Experience 🚀 "),
@@ -268,7 +308,7 @@ const contactInfo = {
     "If you want to discuss anything, contact me at one of these social media below",
 };
 
-//Twitter Section
+// Twitter Section
 
 const twitterDetails = {
   userName: "jessie_anh_ng", //Replace "twitter" with your twitter username without @
@@ -286,4 +326,5 @@ export {
   talkSection,
   contactInfo,
   twitterDetails,
+  bigProjects,
 };
