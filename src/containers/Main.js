@@ -5,7 +5,7 @@ import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
-import Leadership from "./leadership/Leadership";
+import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Talks from "./talks/Talks";
 import Education from "./education/Education";
@@ -14,6 +14,7 @@ import Twitter from "./twitter-embed/twitter";
 import {StyleProvider} from "../contexts/StyleContext";
 import "./Main.scss";
 import Profile from "./profile/Profile";
+import StartupProject from "./StartupProjects/StartupProject";
 
 export default class Main extends Component {
   constructor(props) {
@@ -47,9 +48,10 @@ export default class Main extends Component {
           <Skills />
           <Education />
           <WorkExperience />
+          <StartupProject />
           <Projects />
           <StackProgress />
-          <Leadership />
+          <Achievement />
           <Blogs />
           <Talks />
           <Twitter />

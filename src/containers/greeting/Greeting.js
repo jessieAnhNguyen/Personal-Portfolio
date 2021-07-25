@@ -5,16 +5,8 @@ import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-<<<<<<< HEAD
-// import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
-import { Fade } from "react-reveal";
-import emoji from "react-easy-emoji";
-=======
-import Button from "../../components/button/Button";
 
 import {illustration, greeting} from "../../portfolio";
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -56,21 +48,14 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-<<<<<<< HEAD
-            <img
-              alt="Personal photo"
-              src={require("../../assets/images/greetingPhoto.jpg")}
-            ></img>
-=======
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                alt="my_profile_picture"
+                src={require("../../assets/images/greetingPhoto.jpg")}
               ></img>
             )}
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
           </div>
         </div>
       </div>

@@ -6,33 +6,6 @@ import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
-<<<<<<< HEAD
-    if(techStack.viewSkillBars){
-        return (
-            <Fade bottom duration={1000} distance="20px">
-            <div className="skills-container">
-
-                <div className="skills-bar">
-                    <h1 className="skills-heading">Proficiency</h1>
-                    {techStack.experience.map((exp) => {
-                        const progressStyle = {
-                            width: exp.progressPercentage
-                        };
-                        return (
-                        <div className="skill">
-                            <p>{exp.Stack}</p>
-                            <div className="meter">
-                                <span style={progressStyle}></span>
-                            </div>
-                        </div>
-                        );
-                    })}
-                </div>
-
-                {/* <div className="skills-image">
-                    <img alt="Skills" src={require("../../assets/images/skill.svg")} />
-                </div> */}
-=======
   if (techStack.viewSkillBars) {
     return (
       <Fade bottom duration={1000} distance="20px">
@@ -53,9 +26,8 @@ export default function StackProgress() {
               );
             })}
           </div>
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
 
-          <div className="skills-image">
+          {/* <div className="skills-image">
             {illustration.animated ? (
               <DisplayLottie animationData={Build} />
             ) : (
@@ -64,7 +36,7 @@ export default function StackProgress() {
                 src={require("../../assets/images/skill.svg")}
               />
             )}
-          </div>
+          </div> */}
         </div>
       </Fade>
     );

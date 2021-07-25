@@ -17,21 +17,10 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-<<<<<<< HEAD
             <img
               alt="Personal Photo"
               src={require("../../assets/images/workPhoto.jpg")}
             ></img>
-=======
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
           </div>
         </Fade>
         <Fade right duration={1000}>

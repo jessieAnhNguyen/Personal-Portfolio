@@ -7,7 +7,7 @@
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: false, // set to false to use static SVG
 };
 
 const greeting = {
@@ -15,8 +15,9 @@ const greeting = {
   username: "Anh Nguyen",
   title: "Hi, I'm Anh (Jessie) Nguyen",
   subTitle: emoji(
-    "A junior studying Computer Science at the University of Rochester 👩‍💻. Passionate in Open Source, Software Development and community activities 🤩."
+    "A senior studying Computer Science at the University of Rochester 👩‍💻. I'm passionate in Open Source projects, Software Development and community activities 🤩."
   ),
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -54,6 +55,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js",
     },
     {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python",
+    },
+    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react",
     },
@@ -73,11 +78,8 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Android",
       fontAwesomeClassname: "fab fa-android",
     },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python",
-    },
   ],
+  display: true,
 };
 
 // Education Section
@@ -93,36 +95,9 @@ const educationInfo = {
       desc: "",
       descBullets: [
         "Some courses: Databases Systems, Web Development, Android App Development, Human-Computer Interaction, Artificial Intelligence, Data Structures and Algorithms",
-        "Teaching Assistant for Computation and Formal Systems",
+        "Teaching Assistant for Artificial Intelligence",
         "Member of Phi Beta Kappa Honor Society",
       ],
-    },
-  ],
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Object-Oriented Programming", //Insert stack or technology you have experience in
-      progressPercentage: "85%", //Insert relative proficiency in percentage
-    },
-
-    {
-      Stack: "Databases and APIs",
-      progressPercentage: "75%",
-    },
-
-    {
-      Stack: "Android App Development",
-      progressPercentage: "75%",
-    },
-
-    {
-      Stack: "Front-end and Design",
-      progressPercentage: "60%",
     },
   ],
 };
@@ -132,6 +107,19 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Software Engineer Intern",
+      company: "Microsoft",
+      companylogo: require("./assets/images/Microsoft_logo.png"),
+      date: "June 2021 - August 2021",
+      desc:
+        "Azure Identity Security Infrastructure team",
+      descBullets: [
+        "Built a multiple-page web application that displayed Token Signing Key Metadata for internal use",
+        "Created user-friendly visualization of the data which enabled timely rollover in case of outages",
+        "Technologies used are React, Redux-Saga, and TypeScript",
+      ],
+    },
     {
       role: "Open Source Contributor",
       company: "Major League Hacking (MLH) Fellowship",
@@ -168,44 +156,104 @@ const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "jessieAnhNguyen", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to false
+  display: true,
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "How UR Feeling",
+      projectDesc: "A web application that detects students' moods during online lectures using Facial recognition",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://sites.google.com/view/ur-stressed"
+        },
+        {
+          name: "GitHub Link",
+          url: "https://github.com/amnshrestha/UR-Stressed"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Stack Attack",
+      projectDesc: "An open-source CLI tool that divides and stacks small Pull Requests on GitHub",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "GitHub Link",
+          url: "https://github.com/taneliang/stack-attack"
+        }
+      ]
+    },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "React Native Hermes Profile Transformer",
+      projectDesc: "An open-source tool that converts Hermes sampling profiles to Chrome DevTools compatible format",
+      footerLink: [
+        {
+          name: "npm Package",
+          url: "https://www.npmjs.com/package/hermes-profile-transformer"
+        },
+        {
+          name: "GitHub Link",
+          url: "https://github.com/react-native-community/hermes-profile-transformer"
+        }
+      ]
+    },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "MakeUp Browser",
+      projectDesc: "An Android mobile app for users to search information about make-up products by brands or types",
+      footerLink: [
+        {
+          name: "GitHub Link",
+          url: "https://github.com/jessieAnhNguyen/MakeUpBrowser"
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 }
+
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: true, //Set it to true to show Proficiency Section
+  experience: [
+    {
+      Stack: "Object-Oriented Programming", //Insert stack or technology you have experience in
+      progressPercentage: "85%", //Insert relative proficiency in percentage
+    },
+
+    {
+      Stack: "Databases and APIs",
+      progressPercentage: "75%",
+    },
+
+    {
+      Stack: "Front-end Web Development",
+      progressPercentage: "75%",
+    },
+
+    {
+      Stack: "Android App Development",
+      progressPercentage: "65%",
+    },
+  ],
+};
+
+
 // Achievement Section
 // Include certificates, talks etc
 
-const leadershipSection = {
+const achievementSection = {
   title: emoji("Leadership Experience 🚀 "),
   achievementsCards: [
     {
@@ -258,6 +306,7 @@ const leadershipSection = {
       ],
     },
   ],
+  display: true,
 };
 
 // Blogs Section
@@ -283,6 +332,7 @@ const blogSection = {
         "My experience being in the inaugural class of MLH Fellows in Summer 2020",
     },
   ],
+  display: true,
 };
 
 // Talks Sections
@@ -300,6 +350,7 @@ const talkSection = {
       url: "https://www.youtube.com/watch?v=JDct3Hsh4m8&ab_channel=KendoUI",
     },
   ],
+  display: true,
 };
 
 const contactInfo = {
@@ -312,8 +363,10 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "jessie_anh_ng", //Replace "twitter" with your twitter username without @
+  display: true,
 };
 export {
+  illustration,
   greeting,
   socialMediaLinks,
   skillsSection,
@@ -321,7 +374,7 @@ export {
   techStack,
   workExperiences,
   openSource,
-  leadershipSection,
+  achievementSection,
   blogSection,
   talkSection,
   contactInfo,

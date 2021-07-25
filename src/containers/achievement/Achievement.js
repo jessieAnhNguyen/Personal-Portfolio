@@ -1,16 +1,8 @@
-<<<<<<< HEAD:src/containers/leadership/Leadership.js
 import React, { useContext } from "react";
-import "./Leadership.css";
-import LeadershipCard from "../../components/leadershipCard/LeadershipCard";
-import { leadershipSection } from "../../portfolio";
-import { Fade } from "react-reveal";
-=======
-import React, {useContext} from "react";
 import "./Achievement.scss";
-import AchievementCard from "../../components/achievementCard/AchievementCard";
-import {achievementSection} from "../../portfolio";
-import {Fade} from "react-reveal";
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c:src/containers/achievement/Achievement.js
+import AchievementCard from "../../components/achievementCard/AchievementCard.js";
+import { achievementSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
@@ -29,7 +21,7 @@ export default function Achievement() {
                   : "heading achievement-heading"
               }
             >
-              {leadershipSection.title}
+              {achievementSection.title}
             </h1>
             <p
               className={
@@ -38,20 +30,13 @@ export default function Achievement() {
                   : "subTitle achievement-subtitle"
               }
             >
-              {leadershipSection.subtitle}
+              {achievementSection.subtitle}
             </p>
           </div>
           <div className="achievement-cards-div">
-<<<<<<< HEAD:src/containers/leadership/Leadership.js
-            {leadershipSection.achievementsCards.map((card) => {
-              return (
-                <LeadershipCard
-=======
-            {achievementSection.achievementsCards.map((card, i) => {
+            {achievementSection.achievementsCards.map((card) => {
               return (
                 <AchievementCard
-                  key={i}
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c:src/containers/achievement/Achievement.js
                   isDark={isDark}
                   cardInfo={{
                     title: card.title,

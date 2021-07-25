@@ -39,34 +39,16 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-<<<<<<< HEAD
-          <li>
-            <a href="#skills">About me</a>
-          </li>
-          {exp === true && (
-=======
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">About Me</a>
             </li>
           )}
           {viewExperience && (
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
             <li>
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-<<<<<<< HEAD
-          <li>
-            <a href="#opensource">Open Source</a>
-          </li>
-          <li>
-            <a href="#achievements">Leadership Experiences</a>
-          </li>
-          <li>
-            <a href="#blogs">Blogs</a>
-          </li>
-=======
           {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
@@ -87,7 +69,6 @@ function Header() {
               <a href="#talks">Talks</a>
             </li>
           )}
->>>>>>> 18c1a9fd72f89bf91d5e45bf31d7c36b5df88e6c
           <li>
             <a href="#contact">Contact Me</a>
           </li>
