@@ -275,7 +275,7 @@ const achievementSection = {
     {
       title: "Computer Science Undergraduate Council",
       subtitle:
-        "Vice President of University of Rochester's largest computer science organization",
+        "President of University of Rochester's largest computer science organization",
       image: require("./assets/images/CSUG_group_photo.jpeg"),
       footerLink: [
         {

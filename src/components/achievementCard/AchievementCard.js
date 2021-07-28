@@ -1,6 +1,7 @@
 import React from "react";
+import './AchievementCard.scss'
 
-export default function AchievementCard({cardInfo}) {
+export default function AchievementCard({cardInfo, isDark}) {
   function openUrlInNewTab(url) {
     var win = window.open(url, "_blank");
     win.focus();
@@ -18,9 +19,15 @@ export default function AchievementCard({cardInfo}) {
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
           return (
-            <p key={i} onClick={() => openUrlInNewTab(v.url)}>
+            <span
+              key={i}
+              className={
+                isDark ? "dark-mode certificate-tag" : "certificate-tag"
+              }
+              onClick={() => openUrlInNewTab(v.url)}
+            >
               {v.name}
-            </p>
+            </span>
           );
         })}
       </div>
