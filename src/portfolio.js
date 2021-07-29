@@ -115,8 +115,8 @@ const workExperiences = {
       desc:
         "Azure Identity Security Infrastructure team",
       descBullets: [
-        "Built a multiple-page web application that displayed Token Signing Key Metadata for internal use",
-        "Created user-friendly visualization of the data which enabled timely rollover in case of outages",
+        "Built a multiple-page dashboard that displayed key metadata stored in the Key Management system",
+        "Created user-friendly data visualization which enables livesite engineers to monitor system health and diagnose issues ",
         "Technologies used are React, Redux-Saga, and TypeScript",
       ],
     },

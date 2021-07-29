@@ -45,9 +45,10 @@
   line-height: 40px;
 }
 
-.greeting-image-div > * {
-  flex: 1;
-  margin: auto;
+.greeting-image-div {
+  flex: 0.75;
+  margin-bottom: 30px;
+  margin-left: 100px;
 }
 
 .greeting-image-div > img {
