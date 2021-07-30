@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca36675d.chunk.css",
-    "main.js": "/static/js/main.2aa84b60.chunk.js",
-    "main.js.map": "/static/js/main.2aa84b60.chunk.js.map",
+    "main.css": "/static/css/main.dc9a6d8b.chunk.css",
+    "main.js": "/static/js/main.2df7dc0b.chunk.js",
+    "main.js.map": "/static/js/main.2df7dc0b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99495fbf.js",
     "runtime-main.js.map": "/static/js/runtime-main.99495fbf.js.map",
     "static/js/2.e04097d1.chunk.js": "/static/js/2.e04097d1.chunk.js",
@@ -11,10 +11,10 @@
     "static/js/3.d09e81aa.chunk.js": "/static/js/3.d09e81aa.chunk.js",
     "static/js/3.d09e81aa.chunk.js.map": "/static/js/3.d09e81aa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b3722a72fc0eee5fce6a0ee7160a1c42.js": "/precache-manifest.b3722a72fc0eee5fce6a0ee7160a1c42.js",
+    "precache-manifest.4d7cfee82299dd572d4db8805a85689b.js": "/precache-manifest.4d7cfee82299dd572d4db8805a85689b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.25727338.chunk.css.map": "/static/css/3.25727338.chunk.css.map",
-    "static/css/main.ca36675d.chunk.css.map": "/static/css/main.ca36675d.chunk.css.map",
+    "static/css/main.dc9a6d8b.chunk.css.map": "/static/css/main.dc9a6d8b.chunk.css.map",
     "static/js/2.e04097d1.chunk.js.LICENSE.txt": "/static/js/2.e04097d1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/CSUG_group_photo.jpeg": "/static/media/CSUG_group_photo.550273c5.jpeg",
@@ -22,16 +22,16 @@
     "static/media/DSCPhoto2.jpg": "/static/media/DSCPhoto2.008c62da.jpg",
     "static/media/URLogo.png": "/static/media/URLogo.849a51c6.png",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.51cf7192.svg",
-    "static/media/facebookLogo.png": "/static/media/facebookLogo.8ddf76a1.png",
     "static/media/fptLogo.png": "/static/media/fptLogo.336a56a0.png",
     "static/media/greetingPhoto.jpg": "/static/media/greetingPhoto.74c84136.jpg",
+    "static/media/react_native_logo.png": "/static/media/react_native_logo.9271fad8.png",
     "static/media/TalkCard.scss": "/static/media/talksCardBack.13780cdd.svg",
     "static/media/workPhoto.jpg": "/static/media/workPhoto.88296c7f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.99495fbf.js",
     "static/js/2.e04097d1.chunk.js",
-    "static/css/main.ca36675d.chunk.css",
-    "static/js/main.2aa84b60.chunk.js"
+    "static/css/main.dc9a6d8b.chunk.css",
+    "static/js/main.2df7dc0b.chunk.js"
   ]
 }
