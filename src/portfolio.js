@@ -123,7 +123,7 @@ const workExperiences = {
     {
       role: "Open Source Contributor",
       company: "Major League Hacking (MLH) Fellowship",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/react_native_logo.png"),
       date: "June 2020 - August 2020",
       desc:
         "Contributed to Facebook’s React Native and Hermes (an engine optimized for running React Native apps on Android).",
@@ -363,7 +363,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "jessie_anh_ng", //Replace "twitter" with your twitter username without @
-  display: true,
+  display: false,
 };
 export {
   illustration,
